@@ -1,0 +1,19 @@
+
+h1,h2,h3{
+    font-family: 'Eczar', serif;
+}
+body,p,a{
+    font-family: 'Eczar', serif;
+}
+h1,h3{
+    text-align:left;
+    color:white;
+    padding-left: 50px;
+}
+header{
+    background-image: url('img/nl_head.jpg');
+}
+nav a{
+    color: black;
+
+}

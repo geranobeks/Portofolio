@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html{
+            margin:0 0 0 0;
+            padding: 0 0 0 0;
+        }
+        body{
+            font-family: Copse, Serif;
+            text-align: center;
+        }
+        img{
+            height: 300px;
+            width: 300px;
+            border: 0px;
+            padding-right: 1.5px;
+            padding-left: 1.5px;
+            padding-bottom: 3px;
+        }
+        #pics{
+            width: 909px;
+            height: 909px;
+            border: solid 1px black;
+            font-size: 0px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<h1>FenixShuffle</h1>
+<div id="pics">
+    <img src="../img/fenix1.jpg">
+    <img src="../img/fenix2.jpg">
+    <img src="../img/fenix3.jpg">
+    <img src="../img/fenix4.jpg">
+    <img src="../img/fenix5.jpg">
+    <img src="../img/fenix6.jpg">
+    <img src="../img/fenix7.jpg">
+    <img src="../img/fenix8.jpg">
+    <img src="../img/fenix9.jpg">
+</div>
+<script>
+    var plaatjes = document.getElementsByTagName("img");
+    var random= 0;
+
+    var randomNumbers = [];
+
+    while (randomNumbers.length < 9){
+        var random = Math.floor(Math.random() * 9) + 1;
+        if (randomNumbers.lastIndexOf(random) == -1) {
+            randomNumbers.push(random);
+
+        }
+    }
+
+    random= 0;
+    for( var plaatje in plaatjes){
+        plaatjes[plaatje].src = "../img/fenix"+ randomNumbers[random] +".jpg";
+        random++;
+    }
+
+</script>
+</body>
+</html>

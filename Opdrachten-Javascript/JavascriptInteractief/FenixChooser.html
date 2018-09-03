@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Copse" rel="stylesheet">
+    <title>Title</title>
+    <style>
+
+        body{
+            font-family: 'Copse', Serif;
+            text-align: center;
+        }
+        div.picture-holder {
+            box-sizing: border-box;
+            height: 450px;
+            width: 300px;
+            float: left;
+            background-color: red;
+            border: solid 1px black;
+        }
+        div.favoriet{
+            width: 300px;
+            height: 150px;
+            background-color: transparent;
+            background-image: none;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #pics{
+            width: 900px;
+            height: 1350px;
+            border: solid 1px black;
+            font-size:0px;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Fenixchooser</h1>
+<h3>choose your favorite fenix</h3>
+<div id="pics">
+
+</div>
+<script>
+    pics= document.getElementById("pics");
+    createPicsHolders();
+    createFenixImages();
+
+function createPicsHolders() {
+    for(var i = 0; i < 9; i++) {
+        pictureHolder = document.createElement("div");
+        pictureHolder.className = "picture-holder";
+        pictureHolder.id = "picture-holder-" +i;
+        pics.appendChild(pictureHolder);
+
+    }
+}
+
+    function createFenixImages() {
+        pictureHolders = document.getElementsByClassName("picture-holder");
+        for (var i = 0; i < pictureHolders.length; i++) {
+            favoriet = document.createElement("div");
+            favoriet.className = "favoriet";
+            favoriet.id ="favoriet"+ (i+1);
+            fenixPlaatje =document.createElement("img");
+            fenixPlaatje.src = "../img/fenix" + (i+1) + ".jpg";
+            fenixPlaatje.id=(i+1);
+            fenixPlaatje.addEventListener("click", function () {
+                maakFavoriet(this.id);
+            });
+            pictureHolders[i].appendChild(favoriet);
+            pictureHolders[i].appendChild(fenixPlaatje);
+
+        }
+    }
+
+    function maakFavoriet(id) {
+        console.log("maak mij favoriet! het gaat om fenix..." +id );
+        notsofavoriet = document.getElementsByClassName("favoriet");
+
+        for (var i =0; i< notsofavoriet.length; i++){
+            notsofavoriet[i].style.backgroundImage = "none";
+        }
+        favoriet = document.getElementById("favoriet" + id);
+        favoriet.style.backgroundImage = "url('../img/Heart.png')";
+    }
+
+
+    //picsHolders maken
+    //picsHolders bevat een plaatje van een feniks en een favorite symbool (hartje)
+    //apenPlaatjes toeveoegn aan picsHolders
+    //favorite symbool toeveogen picsHolders
+</script>
+
+</body>
+</html>

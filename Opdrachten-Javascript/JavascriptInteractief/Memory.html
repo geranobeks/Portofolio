@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memory</title>
+    <style>
+        #memory {
+            height: 300px;
+            width: 300px;
+            border: 3px black solid;
+            transition: 2s;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+<div id="memory"></div>
+<script>
+    var plaatjes = [1,2,3,4,5,6,7,8,9] ;
+    var teller =0;
+    var slideholder = document.getElementById("memory");
+    slideholder.style.backgroundImage = "url('../img/memoryImage.jpg')";
+
+    slideholder.addEventListener("click", function () {
+        slideholder.style.backgroundImage = "url('../img/fenix" + getfenix() + ".jpg')";
+    });
+
+    function getfenix (){
+        if(teller >= plaatjes.length ) {
+            teller = 1;
+        } else {
+            teller++;
+        }
+        console.log(teller);
+        return teller;
+
+    }
+</script>
+</body>
+</html>
