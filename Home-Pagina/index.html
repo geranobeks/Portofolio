@@ -1,39 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>Home</title>
-    <link rel="stylesheet" href="Home.css">
+    <title>Portofolio Gerano beks</title>
 </head>
+
 <body>
-<header>
-    <img id="logo" src="Header.png">
-</header>
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="AlleHtmlOpdrachten.html">HTML</a></li>
-        <li><a href="AlleJavascriptOpdrachten.html">Javascript</a></li>
-        <li><a href="">Bootstrap</a></li>
-    </ul>
+<style>
+    body {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+</style>
+<nav class="navbar navbar-inverse navbar-fixed-top navbar-expand-sm dropdown">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="disabled navbar-brand text-white">Portofolio</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">Over mezelf</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
 </nav>
-<ol>
-    <li>
-        <a href="../OpdrachtenHTML/tabellen/tabel1.html"><h4>opdracht tabellen</h4> </a> </li>
-    <li>
-        <a href="../OpdrachtenHTML/WebsiteVanafSchets/schets.html"><h4>opdracht website vanaf schets</h4> </a> </li>
-    <li>
-        <a href="../OpdrachtenHTML/BurtonEducationWebsite/Burton.html"><h4>opdracht Burton Education</h4></a>
-    </li>
-    <li>
-        <a href="../OpdrachtenHTML/ResponsiveDesign/TrueMusic.html"><h4>opdracht Responsive Design</h4></a>
-    </li>
-</ol>
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron justify-center">
+    <div class="container">
+        <h1>Hallo, bezoeker!</h1>
+        <p>Mijn maker had had me eerst voor een betere overzicht op zijn schoolopdrachten gemaakt zodat hij niets kon kwijtraken, en zodat hij elke keer mijn link kon versturen om het in te leveren.<br> Nu ben ik ook geschikt als portofolio</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Mijn CV &raquo;</a></p>
+    </div>
+</div>
+
+<div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-md-3">
+            <h2>HTML</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn btn-default" href="AlleHtmlOpdrachten.html" role="button">Opdrachten &raquo;</a></p>
+        </div>
+        <div class="col-md-3">
+            <h2>Javascript</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn btn-default" href="AlleJavascriptOpdrachten.html" role="button">Opdrachten &raquo;</a></p>
+        </div>
+        <div class="col-md-3">
+            <h2>Bootstrap</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p><a class="btn btn-default" href="#" role="button">Opdrachten &raquo;</a></p>
+        </div>
+    </div>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2018 Company, Inc.</p>
+    </footer>
+</div> <!-- /container -->
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</body>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </body>
 </html>
