@@ -49,6 +49,10 @@ ul{
 }
 .box li a{
     color: grey;
-    font-size: 60px;
+    font-size: 50px;
+    transition: 100ms;
+}
+.box li a:hover{
+    color: #a6a6a6;
 }
 
